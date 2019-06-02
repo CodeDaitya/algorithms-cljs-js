@@ -1,0 +1,2 @@
+- Read numbers via stdin
+- Read numbers stored in a json file
