@@ -1,0 +1,22 @@
+{
+  "name": "algorithms-cljs",
+  "version": "1.0.0",
+  "description": "A collection of algorithms implemented in ClojureScript and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyasaadhak/algorithms-cljs-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyasaadhak/algorithms-cljs-js/issues"
+  },
+  "homepage": "https://github.com/satyasaadhak/algorithms-cljs-js#readme",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
+}
