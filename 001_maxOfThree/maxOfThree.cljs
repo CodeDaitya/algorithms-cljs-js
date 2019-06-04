@@ -15,3 +15,20 @@
   "Function which returns the maximum of the three nums"
   [x y z]
   (Math/max x y z))
+
+
+;; scratch
+
+(comment
+
+(require '[readline :as readline])
+
+(def rl 
+  (.createInterface readline 
+                    #js {:input (.-stdin js/process) :output (.-stdout js/process)}))
+
+(.question rl "What's your name? "
+           (fn [name]
+             (console.log "Hello," name))
+           (.-close readline))
+)
