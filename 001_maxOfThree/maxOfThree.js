@@ -1,7 +1,4 @@
-const argv = require('yargs')
-              .usage('Usage: $0 --x=[num] --y=[num] --z=[num]')
-              .demand(['x', 'y', 'z'])
-              .argv;
+const readline = require('readline');
 
 /**
  * @param  {} x
@@ -11,7 +8,6 @@ const argv = require('yargs')
 function maxOfThree(x, y, z) {
   
   let max = x;
-  
   if (y > max) {
     
     if (y >= z) {
@@ -35,5 +31,25 @@ function maxOfThree(x, y, z) {
   return max;
 }
 
-let maxResult = maxOfThree(argv.x, argv.y, argv.z);
-console.log(maxResult);
+const readInput = readline.createInterface({
+  input : process.stdin,
+  output: process.stdout
+});
+
+readInput.question('Enter a space separated list of 3 numbers: ', (input) => {
+  
+  let inputArray = input.split(' ');
+
+  // Check input validity
+  if (isNaN(inputArray[0]) || isNaN(inputArray[1]) || isNaN(inputArray[2]) ||
+       inputArray.length > 3 || inputArray.length < 3) {
+    
+    console.log('Invalid Input!\nExiting!!');
+    readInput.close();
+  } else {
+    
+    let maxResult = maxOfThree(inputArray[0], inputArray[1], inputArray[2]);
+    console.log(maxResult);
+    readInput.close();
+  }
+});
