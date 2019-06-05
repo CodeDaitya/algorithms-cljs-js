@@ -16,7 +16,12 @@
     "url": "https://github.com/satyasaadhak/algorithms-cljs-js/issues"
   },
   "homepage": "https://github.com/satyasaadhak/algorithms-cljs-js#readme",
-  "dependencies": {
-    "yargs": "^13.2.4"
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
