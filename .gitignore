@@ -6,3 +6,6 @@ node_modules
 
 # eslintrc file
 .eslintrc.json
+
+# editor config file
+.vscode
