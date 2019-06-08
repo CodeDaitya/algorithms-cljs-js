@@ -1,5 +1,3 @@
-const readline = require('readline');
-
 /**
  * Method swapValues(a, b) swaps values in two variables
  * 
